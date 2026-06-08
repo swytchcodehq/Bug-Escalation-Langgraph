@@ -1,9 +1,0 @@
-{
-  "methods": [
-    {
-      "method_uuid": "",
-      "method_name": "Query audit logs with filters",
-      "canonical_id": "cms.v3.auditLogs.list"
-    }
-  ]
-}

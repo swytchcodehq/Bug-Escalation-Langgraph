@@ -1,4 +1,4 @@
-# Bug Escalation — LangGraph + Swytchcode
+# Bug Escalation - LangGraph + Swytchcode
 
 Automates cross-platform bug escalation:
 1. Creates a GitHub issue with severity label

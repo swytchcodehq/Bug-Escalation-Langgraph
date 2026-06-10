@@ -73,7 +73,7 @@ create_github_issue -> create_jira_ticket -> notify_slack
 | `JIRA_BASE_URL` | Yes | Jira site base URL (`https://yourcompany.atlassian.net`). |
 | `JIRA_PROJECT_KEY` | Yes | Project key the ticket is created under (for example `ENG`). |
 | `SLACK_BOT_TOKEN` | Yes | Slack bot token (`xoxb-...`). |
-| `SWYTCHCODE_TOKEN` | Yes | Swytchcode auth token. Run `swytchcode whoami` to get yours. |
+| `SWYTCHCODE_TOKEN` | Yes | Swytchcode auth token. Get yours from the Swytchcode dashboard under Settings, API keys. |
 
 The bug details (title, description, severity, Slack channel) are defined as a sample in `main.py`. Edit them there to escalate a different bug.
 
@@ -119,7 +119,6 @@ Runnable LangGraph + Swytchcode examples:
 - [Customer-Onboarding-Langgraph](https://github.com/swytchcodehq/Customer-Onboarding-Langgraph)
 - [Create-And-Send-Payment-Langgraph](https://github.com/swytchcodehq/Create-And-Send-Payment-Langgraph)
 - [Lead-Qualification-Langgraph](https://github.com/swytchcodehq/Lead-Qualification-Langgraph)
-- [Bug-Escalation-Langgraph](https://github.com/swytchcodehq/Bug-Escalation-Langgraph)
 
 ## License
 

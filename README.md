@@ -2,19 +2,19 @@
 
 A LangGraph agent that escalates a reported bug across GitHub, Jira, and Slack in one run.
 
-> Run one command to open a GitHub issue, file a linked Jira ticket, and post the alert to Slack. No API glue code, no credential juggling, no retry logic to maintain.
+> Run one command to open a GitHub issue, file a linked Jira ticket, and post the alert to Slack, without writing API glue code or managing credentials and retries.
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/swytchcodehq/Bug-Escalation-Langgraph?style=flat-square)](https://github.com/swytchcodehq/Bug-Escalation-Langgraph/commits)
 
-## What This Does
+## What this does
 
 This demo escalates a bug across three tools at once. It opens a GitHub issue with a severity label, creates a Jira ticket that links back to that issue, and posts a severity-coded notification to a Slack channel. The steps run as a LangGraph state machine, so the GitHub issue URL flows into both the Jira ticket and the Slack message.
 
 Every external call goes through [Swytchcode](https://www.swytchcode.com/), a deterministic API execution layer for AI agents. The agent code never calls GitHub, Jira, or Slack directly. It asks the Swytchcode runtime to run a named method, and the runtime validates the request against a schema registry of 2,000+ integrations, handles auth and retries, and records an audit trail of what ran.
 
-## How It Works
+## How it works
 
 The graph has three nodes and runs them in order:
 
@@ -29,7 +29,7 @@ create_github_issue -> create_jira_ticket -> notify_slack
 ## Prerequisites
 
 - **Python 3.9+**
-- **Swytchcode CLI.** Install with the verified script for your platform:
+- **Swytchcode CLI:** install with the verified script for your platform:
 
   Linux / macOS:
   ```bash
@@ -61,7 +61,7 @@ create_github_issue -> create_jira_ticket -> notify_slack
    swytchcode bootstrap
    ```
 
-## Environment Variables
+## Environment variables
 
 | Variable | Required | Description |
 |----------|----------|-------------|
@@ -83,7 +83,7 @@ The bug details (title, description, severity, Slack channel) are defined as a s
 python main.py
 ```
 
-## Expected Output
+## Expected output
 
 The script prints each node as it runs and a summary at the end:
 
@@ -103,7 +103,7 @@ Bug escalated across all platforms!
 
 After a run you should see a new labeled issue in the GitHub repo, a Jira task linking back to it, and a severity-coded message in the Slack channel.
 
-## Canonical IDs Used
+## Canonical IDs used
 
 | Service | Canonical ID |
 |---------|--------------|

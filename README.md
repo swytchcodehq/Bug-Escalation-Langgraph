@@ -30,15 +30,8 @@ create_github_issue -> create_jira_ticket -> notify_slack
 
 - **Python 3.9+**
 - **Swytchcode CLI:** install with the verified script for your platform:
+    npm install -g swytchcode
 
-  Linux / macOS:
-  ```bash
-  curl -fsSL https://cli.swytchcode.com/install.sh | sh
-  ```
-  Windows (PowerShell):
-  ```powershell
-  irm https://cli.swytchcode.com/install.ps1 | iex
-  ```
 - A **GitHub** token, **Jira** credentials, and a **Slack** bot token (see the table below).
 
 ## Setup

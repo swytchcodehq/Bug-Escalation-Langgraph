@@ -3245,7 +3245,7 @@ METHODS:
         STATUS: 500
         WHEN: Typical error response (HTTP default)
     CANONICAL_ID: chat.postephemeral.chat.postephemeral.create
-  chat.postmessage.chat.postmessage.create:
+  slack.chat.postmessage.create:
     SUMMARY: Sends a message to a channel.
     DESC: Sends a message to a channel.
     HTTP:
@@ -3335,7 +3335,7 @@ METHODS:
       - TYPE: STRUCT(Errordefault)
         STATUS: 500
         WHEN: Typical error response if too many attachments are included (HTTP default)
-    CANONICAL_ID: chat.postmessage.chat.postmessage.create
+    CANONICAL_ID: slack.chat.postmessage.create
   chat.schedulemessage.chat.schedulemessage.create:
     SUMMARY: Schedules a message to be sent to a channel.
     DESC: Schedules a message to be sent to a channel.

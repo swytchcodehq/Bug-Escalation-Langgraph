@@ -7850,7 +7850,7 @@ METHODS:
         STATUS: 401
         WHEN: Returned if the authentication credentials are incorrect or missing. (HTTP 401)
     CANONICAL_ID: rest.api.license.list
-  rest.api.issue.create:
+  jira.rest.issue.create:
     SUMMARY: Create issue
     DESC: |-
       Creates an issue or, where the option to create subtasks is enabled in Jira, a subtask. A transition may be applied, to move the issue or subtask to a workflow step other than the default start step, and issue properties set.
@@ -7917,7 +7917,7 @@ METHODS:
       - TYPE: STRUCT(ErrorCollection)
         STATUS: 422
         WHEN: Returned if a configuration problem prevents the creation of the issue. (HTTP 422)
-    CANONICAL_ID: rest.api.issue.create
+    CANONICAL_ID: jira.rest.issue.create
   rest.api.archive.create:
     SUMMARY: Archive issue(s) by JQL
     DESC: |

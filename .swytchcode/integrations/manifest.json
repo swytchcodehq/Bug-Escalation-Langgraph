@@ -6,7 +6,21 @@
     "methods": 588,
     "workflows": 0
   },
+  "atlassian.jira": {
+    "version": "1001.0.0-snapshot",
+    "sandbox_endpoint": "http://localhost",
+    "production_endpoint": "http://localhost",
+    "methods": 0,
+    "workflows": 0
+  },
   "github.github": {
+    "version": "1.1.4",
+    "sandbox_endpoint": "https://api.github.com",
+    "production_endpoint": "https://api.github.com",
+    "methods": 0,
+    "workflows": 0
+  },
+  "github.github_api": {
     "version": "1.1.4",
     "sandbox_endpoint": "https://api.github.com",
     "production_endpoint": "https://api.github.com",
@@ -691,6 +705,12 @@
     "production_endpoint": "https://slack.com/api",
     "methods": 0,
     "workflows": 0
+  },
+  "slack.web_api": {
+    "version": "2.0",
+    "sandbox_endpoint": "https://slack.com/api",
+    "production_endpoint": "https://slack.com/api",
+    "methods": 0,
+    "workflows": 0
   }
 }
-

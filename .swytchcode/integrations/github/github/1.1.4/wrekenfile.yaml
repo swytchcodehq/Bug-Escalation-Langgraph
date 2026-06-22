@@ -31609,7 +31609,7 @@ METHODS:
         STATUS: 422
         WHEN: Client error (HTTP 422)
     CANONICAL_ID: repos.issue.get
-  repos.issue.create:
+  github.repo.issues.create:
     SUMMARY: Create an issue
     DESC: |-
       Any user with pull access to a repository can create an issue. If [issues are disabled in the repository](https://docs.github.com/articles/disabling-issues/), the API returns a `410 Gone` status.
@@ -31672,7 +31672,7 @@ METHODS:
       - TYPE: ANY
         STATUS: 503
         WHEN: Server error (HTTP 503)
-    CANONICAL_ID: repos.issue.create
+    CANONICAL_ID: github.repo.issues.create
   repos.issue.comments.get:
     SUMMARY: List issue comments for a repository
     DESC: |-
